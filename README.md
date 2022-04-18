@@ -13,6 +13,12 @@ data = vndb_api.get('vn', 'basic,anime', '(id = 17)')
 ```
 
 # Installation Instructions
+Using pip
+```
+pip3 install vndb-api-wrapper
+```
+
+Compiling from source
 ```
 git clone https://github.com/PoeticViper/VNDB-Python-API-Wrapper.git
 cd VNDB-Python-API-Wrapper

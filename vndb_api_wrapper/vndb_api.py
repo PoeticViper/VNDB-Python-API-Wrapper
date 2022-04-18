@@ -42,6 +42,14 @@ class VNDBAPI:
             logger.error('Failed to authenticate to VNDB API server')
             raise VNDBError(res)
 
+    def __del__(self):
+        """
+        Close the connection upon object destruction
+        """
+        logger.info('Closing connection to VNDB API..')
+        self.__socket.close()
+
+
     def dbstats(self) -> dict:
         """
         Get dbstats for the VNDB

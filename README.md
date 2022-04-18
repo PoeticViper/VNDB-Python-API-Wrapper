@@ -6,7 +6,7 @@ Basic code example
 ```
 from vndb_api_wrapper.vndb_api import VNDBAPI
 ...
-vndb_api = VNDPAPI(<your username>, <your password>)
+vndb_api = VNDBPAPI(<your username>, <your password>)
 
 #  Example of searching for a VN anime of the visual novel with id = 17 using "get"
 data = vndb_api.get('vn', 'basic,anime', '(id = 17)')

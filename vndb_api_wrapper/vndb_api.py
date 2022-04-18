@@ -49,7 +49,6 @@ class VNDBAPI:
         logger.info('Closing connection to VNDB API..')
         self.__socket.close()
 
-
     def dbstats(self) -> dict:
         """
         Get dbstats for the VNDB
